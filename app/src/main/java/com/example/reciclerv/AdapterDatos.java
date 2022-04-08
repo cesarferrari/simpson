@@ -36,6 +36,7 @@ public class AdapterDatos extends RecyclerView.Adapter<AdapterDatos.ViewHolderDa
 
         return new ViewHolderDatos(view);
     }
+    //evento onclick para el recyclerView
     public void setOnClickListener(View.OnClickListener listener){
         this.listener= listener;
     }
@@ -62,7 +63,7 @@ public class AdapterDatos extends RecyclerView.Adapter<AdapterDatos.ViewHolderDa
             listener.onClick(v);
         }
     }
-
+// class viewHolderDatos creada
     public class ViewHolderDatos extends RecyclerView.ViewHolder {
       TextView nombre,descripcion;
       CircleImageView foto;
